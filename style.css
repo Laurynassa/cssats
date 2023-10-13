@@ -1,0 +1,310 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppinslight";
+}
+.header {
+  width: 100%;
+  height: 100%;
+}
+img {
+  margin-top: 1%;
+}
+.pheade {
+  margin-top: 1%;
+  margin-left: 10px;
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+.navSelect {
+  display: flex;
+  gap: 60px;
+  margin: 20px;
+}
+.logop {
+  height: 70px;
+  width: 80px;
+}
+.logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.mainimg {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./foto/kitabi.jpg);
+  background-size: cover;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .badymas {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} */
+.fonas {
+  position: absolute;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* position: absolute;
+    margin: 351px 500px;
+    background: #fff;
+    /* width: 50%; */
+  /* height: 350px; 
+    z-index: -1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+h2 {
+  margin: 65px;
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  margin: 10px;
+}
+.gar1 {
+  overflow-x: hidden;
+  margin: 50px;
+  display: flex;
+}
+.gan1 {
+  width: 300px;
+  height: 200px;
+}
+.pgydomieji {
+  font-size: 22px;
+  margin: 10px;
+}
+.Nykcont {
+  overflow-x: hidden;
+  margin: 50px;
+  flex-direction: row;
+  display: flex;
+}
+.nykfoto {
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 220px;
+}
+.pnyk {
+  margin: 10px;
+  display: block;
+}
+.nykpircol {
+  margin: 10px;
+  flex-direction: column;
+  display: flex;
+}
+.secndf {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.mtxt {
+  display: flex;
+  margin: 15px;
+}
+footer {
+  border-top: solid black 5px;
+  margin: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.mt {
+  line-height: 22px;
+}
+.fp {
+  font-size: 32px;
+}
+@font-face {
+  font-family: "poppinslight";
+  src: url("poppins-light-webfont.woff2") format("woff2"),
+    url("poppins-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* @media (max-width: 1440) and(min-width:768) {
+  .navigation {
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+  }
+} */
+/* styles for tablet devices */
+/* @media (min-width: 770px) {
+  .logo {
+  }
+  .fonas {
+    display: none;
+  }
+  a {
+    font-size: 17px;
+  }
+  .navSelect {
+    height: 10vw;
+  }
+  .body {
+    width: 412px;
+  }
+  .navigation {
+    position: fixed;
+  }
+  .mainimg {
+    padding-top: 0;
+  }
+  .gydomiejiaugalai {
+    display: flex;
+    gap: 0;
+  }
+  .gan1 {
+    width: 40vw;
+    height: 40vw;
+  }
+  .gar1 {
+    flex-direction: column;
+    width: 75vw;
+  }
+
+  .Nykcont {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mtxt {
+    gap: 10px;
+    flex-direction: column;
+  }
+} */
+/* styles for mobile devices */
+@media (min-width: 412px) and (max-width: 769px) {
+  a {
+    font-size: 17px;
+  }
+  .navSelect {
+    height: 10vw;
+  }
+  .body {
+    width: 412px;
+  }
+  .navigation {
+    position: fixed;
+  }
+  .mainimg {
+    padding-top: 0;
+  }
+  .gydomiejiaugalai {
+    display: flex;
+    gap: 0;
+  }
+  .gan1 {
+    width: 40vw;
+    height: 40vw;
+  }
+  .gar1 {
+    flex-direction: column;
+    width: 75vw;
+  }
+
+  .Nykcont {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mt {
+    line-height: 22px;
+  }
+
+  .mtxt {
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 412px) {
+  .logo {
+    display: none;
+  }
+  .fonas {
+    display: none;
+  }
+  a {
+    font-size: 17px;
+  }
+  .navSelect {
+    gap: 15px;
+    height: 10vw;
+  }
+  .body {
+    width: 412px;
+  }
+  .navigation {
+    position: fixed;
+  }
+  .mainimg {
+    padding-top: 0;
+  }
+  .gydomiejiaugalai {
+    display: flex;
+    gap: 0;
+  }
+  .gan1 {
+    width: 40vw;
+    height: 40vw;
+  }
+  .gar1 {
+    flex-direction: column;
+    width: 75vw;
+  }
+
+  .Nykcont {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mtxt {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .mt {
+    line-height: 22px;
+  }
+  .fp {
+    font-size: 32px;
+  }
+}
